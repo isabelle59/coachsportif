@@ -99,7 +99,10 @@ textarea {
 body {
     color: black;
     background-color:#C5EAFD;
-    margin-top: 50px;
+    margin-top: 0;
+}
+header,nav{
+  margin-top: 0;
 }
 .heading {
     margin-top: 50px;
@@ -138,7 +141,6 @@ footer {
     margin: 10px 0px;
 }
 
-
 }
 .iconok {
     font-size: 27px;
@@ -162,9 +164,7 @@ footer {
     font-weight: bold;
     padding: 10px;
 }
-.occurance {
-  
-}
+.occurance {}
 .cfeature {
     padding: 10px;
     font-weight: bold;
@@ -204,7 +204,6 @@ footer {
 /* ==========================================================================
    contact
    ========================================================================== */
-
 .header {
     color: #36A0FF;
     font-size: 27px;
@@ -214,11 +213,22 @@ footer {
     font-size: 35px;
     color: #36A0FF;
 }
+.contact {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 6px;
+    padding-right: 60px;
+    padding-left: 60px;
+    background-color: #eee;
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+
+}
 
 /*==============================================================================
 socials icons nav
 ===============================================================================*/
-
 body {
     background: white;
 }
@@ -301,16 +311,21 @@ body {
     top: 75;
     left: 125%;
 }
+/* ==========================================================================
+   registr form & resa
+   ========================================================================== */
+
+
+
+
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 
-
 /*
  * Hide visually and from screen readers
  */
-
 .hidden {
     display: none !important;
 }
@@ -319,7 +334,6 @@ body {
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -336,7 +350,6 @@ body {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
     clip: auto;
     height: auto;
@@ -349,7 +362,6 @@ body {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-
 .invisible {
     visibility: hidden;
 }
@@ -365,10 +377,10 @@ body {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-
 .clearfix:before, .clearfix:after {
     content: " ";
     /* 1 */
+
     display: table;
     /* 2 */
 }
@@ -381,7 +393,6 @@ body {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
@@ -394,7 +405,6 @@ body {
    Inlined to avoid the additional HTTP request:
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
-
 @media print {
     *, *:before, *:after, *:first-letter, *:first-line {
         background: transparent !important;
@@ -417,6 +427,7 @@ body {
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
+
     a[href^="#"]:after, a[href^="javascript:"]:after {
         content: "";
     }
@@ -428,6 +439,7 @@ body {
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
+
     thead {
         display: table-header-group;
     }
